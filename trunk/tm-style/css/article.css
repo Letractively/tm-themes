@@ -1,0 +1,418 @@
+/*
+Theme Name: TM Style
+Description: 時は金なりスタイル(HTML5 ver)
+Author: phi
+ */
+
+/**
+ * article
+ */
+article.entry {
+    background-color: #ffffff;
+    margin: 0px 0px 36px 15px;
+    
+    border-radius: 4px;
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    
+    border: solid 1px #dddddd;
+}
+
+article.entry:hover {
+    -webkit-box-shadow: 10px 10px 10px #555;
+    -moz-box-shadow: 10px 10px 10px #333;
+    -o-box-shadow: 10px 10px 10px #333;
+    box-shadow: 10px 10px 10px #333;
+}
+
+/**
+ * header
+ */
+article.entry > header {
+    margin: 0 0 5px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 16px;
+    background: #000099;
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0.1) 51%, rgba(255,255,255,0.2) 100%), #000099;
+    background: -moz-linear-gradient(top, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0.1) 51%, rgba(255,255,255,0.2) 100%), #000099;
+    background: -o-linear-gradient(top, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0.1) 51%, rgba(255,255,255,0.2) 100%), #000099;
+    background: linear-gradient(top, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0.1) 51%, rgba(255,255,255,0.2) 100%), #000099;
+    padding: 16px;
+    padding-bottom: 8px;
+}
+
+article.entry > header h1 {
+    font-size: 20px;
+    text-shadow : 2px 2px 2px #888888;
+    padding-bottom: 4px;
+}
+
+article.entry > header h1 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/**
+ * article body
+ */
+article.entry h2 {
+    color: #0066cc;
+    color: #ff6600;
+    font-size: 16px;
+    border-left: solid 4px #ff6600;
+    border-top: dotted 1px #ff6600;
+    border-bottom: dotted 1px #ff6600;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin: 1em 0px;
+}
+
+article.entry h3 {
+    font-size: 15px;
+    line-height: 15px;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    border-bottom: solid 1px #000000;
+    margin-left: 4px;
+    padding: 4px;
+    padding-left: 0px;
+}
+article.entry h3 a {
+    text-decoration: none;
+}
+
+article.entry h4 {
+    margin-left: 4px;
+}
+
+article.entry .content {
+    margin: 0px 16px 16px 16px;
+}
+
+article.entry .content section {
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+article.entry .content section h2 {
+}
+
+article.entry .content p,
+article.entry .content pre
+{
+    margin: 1em;
+    line-height: 1.5em;
+}
+
+/* .content 直下の p と pre はインデントしない */
+article.entry .content > p,
+article.entry .content > pre
+{
+    margin-left: 0em;
+    margin-right: 0em;
+}
+
+article.entry .content pre {
+    margin-bottom: 1em;
+    line-height: 1em;
+}
+
+article.entry .content ul,
+article.entry .content ol
+{
+    line-height: 1.5em;
+    margin: 0.5em 0px;
+    padding: 0px 2em;
+}
+
+article.entry .content img
+{
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0px 0px 8px #aaa;
+    -webkit-transition: 1s;
+    
+    /* デフォルト設定で中央表示 */
+    display: block;
+    max-height: 320px;
+    margin: 10px auto;
+}
+
+article.entry .content img:hover
+{
+    box-shadow: 0px 0px 16px #aaf;
+}
+
+@-webkit-keyframes blinking-anim
+{
+    0%, 100% {
+        -webkit-box-shadow: 0 0 20px 5px #cf0;
+        -moz-box-shadow: 0 0 20px 5px #cf0;
+        -o-box-shadow: 0 0 20px 5px #cf0;
+        box-shadow: 0 0 20px 5px #cf0;
+    }
+    50% {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        -o-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+
+article.entry .content .more-link
+{
+    float: right;
+    color: #fff;
+    background-color: #0022ff;
+    padding: 2px 4px;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #000;
+    
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+    
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    
+    -webkit-animation-name: blinking-anim;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count:infinite;
+}
+
+
+article.entry .content .more-link:hover
+{
+    background-color: #00ccff;
+}
+
+/* table */
+article.entry .content table
+{
+    margin: 1em;
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+
+article.entry .content table th
+{
+    padding: 5px 10px;
+    color: white;
+    background-color: hsl(220, 90%, 70%);
+}
+
+article.entry .content table td
+{
+    padding: 5px 10px;
+    border: solid 1px rgb(240, 240, 240);
+}
+
+article.entry .content table tr:nth-child(odd)
+{
+    background-color: rgb(230, 240, 255);
+}
+
+/* blockquote */
+article.entry .content blockquote {
+    margin: 1em;
+    padding: 1em;
+    box-shadow: inset 0px 0px 8px 0px black;
+    
+    font-style: italic;
+}
+
+
+/**
+ * footer
+ */
+
+article.entry > footer {
+    margin: 16px;
+    font-size: 11px;
+}
+article.entry > footer .category, 
+article.entry > footer .tag,
+article.entry > footer .edit {
+    text-align: right;
+}
+article.entry > footer time {
+    display: block;
+    text-align: right;
+}
+
+/**
+ * comments
+ */
+#comments {
+    background-color: #ffffff;
+    margin: -10px 0px 36px 15px;
+    padding: 15px;
+    
+    -webkit-border-radius: 4px;
+    -webkit-border-top-left-radius: 16px;
+    -webkit-border-bottom-right-radius: 16px;
+    
+    -moz-border-radius: 4px;
+    -moz-border-radius-topleft: 16px;
+    -moz-border-radius-bottomright: 16px;
+    
+    border: solid 1px #dddddd;
+}
+
+#comments h3 {
+    background-color: #ff8800;
+    padding: 3px 10px;
+    color: white;
+    
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+
+#comments #respond {
+    margin-top: 10px;
+}
+
+#comments input, #comments textarea {
+    display: block;
+}
+
+#comments textarea {
+    width: 450px;
+    height: 100px;
+}
+
+#comments .required {
+    color: #ff0000;
+}
+
+#comments code {
+    display: block;
+    font-size: smaller;
+}
+
+#comments ul {
+    list-style-type: none;
+    margin: 0.5em 0px;
+}
+
+#comments ul li {
+    border-top: dotted 1px #ffcc00;
+    padding-top: 10px;
+}
+
+#truckback {
+    color: #000000;
+    background-color: #ffff00;
+    padding: 4px;
+    margin: 0.5em 0px;
+    border: 1px solid #888800;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+
+/**
+ * page navi
+ */
+
+.pagenavi {
+    clear: both;
+    text-align: center;
+    margin: 4em 30px;
+}
+
+.pagenavi a, .pagenavi span {
+    text-decoration: none;
+    border: 1px solid #888888;
+    padding: 3px 5px;
+    margin: 2px;
+    color: #aaaaaa;
+    background-color: #000000;
+    text-align: center;
+}
+
+.pagenavi a:hover {
+    text-decoration: underline;
+    background-color: #444444;
+}
+
+.pagenavi span.current {
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    font-weight: bold;
+    background: none;
+}
+
+/**
+ * Util
+ */
+.clear {
+    clear: both;
+}
+.aligncenter {
+    clear: both;
+    display: block;
+    margin: 10px auto;
+}
+
+.aligncenter img {
+    border: solid 1px #cccccc;    
+}
+
+
+/**
+ * footer links
+ */
+
+.post-links {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: black;
+    
+    
+    color: white;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+}
+
+.post-links p {
+    width: 160px;
+    text-align: center;
+}
+
+.post-links p a {
+    color: #0af;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
