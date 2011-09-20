@@ -1,0 +1,222 @@
+/*
+Theme Name: TM Style
+Description: 時は金なりスタイル(HTML5 ver)
+Author: phi
+ */
+
+/**
+ * base
+ */
+body {
+    font-family: "Meiryo", sans-serif;
+    font-size: 13px;
+    line-height: 1.5em;
+    background: #000000;
+}
+
+#header, #main, #footer {
+    width: 1000px;
+    margin: 0px auto;
+}
+
+/**
+ * header
+ */
+#header {
+    height: 150px;
+}
+
+#header h1 {
+    padding-top: 35px;
+    font-size: 32px;
+    color: #ffffff;
+}
+
+#header h1 a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#header p {
+    padding-top: 8px;
+    color: #ffffff;
+}
+
+#header p a, #header p a:visited {
+    color: #00aaff;
+}
+
+/**
+ * main
+ */
+#main {
+    background-color: #aaaaaa;  /* IE */
+    background-color: rgba(255, 255, 255, 0.75);
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+}
+
+/* #articles */
+#articles {
+    width: 750px;
+    float: left;
+    margin: 25px 5px;
+    padding-top:10px;
+}
+
+#articles > h2 {
+    margin: 0px 0px 30px 15px;
+    padding: 8px;
+    border: solid 2px #ffffff;
+    text-align: center;
+    
+    font-size: 1.25em;
+    font-style: italic;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    border-radius: 8px;
+    -webkit-border-radius: 8px;    
+    -moz-border-radius: 8px;
+}
+
+
+/**
+ * .sidebar
+ */
+#main > .sidebar {
+    width: 220px;
+    float: right;
+    margin: 25px 10px;
+}
+
+.sidebar section {
+    margin-bottom: 10px;
+    padding: 5px 15px;
+}
+
+.sidebar section ul {
+    list-style: none;
+}
+
+.sidebar section ul li {
+    border-bottom: dashed 1px #888888;
+    
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+.sidebar section ul li:hover {
+}
+
+.sidebar section ul li a {
+    text-decoration: none;
+    
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+.sidebar section ul li a:hover {
+    text-decoration: underline;
+    text-shadow: 4px 2px 4px #333333;
+    font-size: 18px;
+    color: #00ff88;
+}
+
+.sidebar section ul li ul.children {
+    margin-left: 1em;
+}
+
+#searchform .screen-reader-text {
+    display:none;
+}
+
+#searchform #s {
+    width:135px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#searchform #searchsubmit {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+}
+
+/**
+ * footer
+ */
+#footer {
+    clear: both;
+    padding-top: 10px;
+    color: #ffffff;
+    height: 150px;
+}
+
+#footer p {
+    text-align: center;
+}
+
+/*
+h1:hover {
+    -webkit-transform: scale(1.25);
+}
+*/
+
+/*
+* {
+    -webkit-transform-style: preserve-3d;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    color: #ffffff;
+}
+*/
+
+.wp-pagenavi:hover {
+    -webkit-animation-play-state: paused;
+    -webkit-transform: rotateY(0deg);
+}
+
+/* 回転 */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotateX(0deg);
+    }
+    
+    100% {
+        -webkit-transform: rotateX(360deg);
+    }
+}
+
+
+/* 赤くなる */
+@-webkit-keyframes blush {
+    0% {
+        
+    }
+    
+    100% {
+        background-color: rgba(255, 0, 0, 1.0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
