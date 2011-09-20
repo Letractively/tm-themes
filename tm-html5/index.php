@@ -69,8 +69,10 @@
                     <footer>
                         
                     </footer>
+                    <hr />
                     
                 </article>
+                
                 <?php endwhile; endif; ?>
                 
             </section>
