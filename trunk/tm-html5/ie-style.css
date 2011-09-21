@@ -3,17 +3,52 @@
 article, aside, dialog, figure, footer, header, hgroup, menu, nav, section {display: block;}
 
 
+#nav ul
+{
+    zoom: 1;
+    width: 1200px;
+}
+
+#nav ul li
+{
+    float: left;
+}
+
+#nav ul li a
+{
+    height: 30px;
+}
+
+
 #contents {
     zoom: 1;
-    width: 1300px;
+    width: 1200px;
     margin: 0px auto;
 }
 
+
 #main {
     float: left;
-    width: 800px;
+    width: 880px;
 }
 
 #side {
     float: right;
+    width: 280px;
+}
+
+#footer
+{
+    clear: both;
+}
+
+#footer .footer-links ul,
+#footer .footer-links ol
+{
+    zoom: 1;
+}
+
+#footer .footer-links ul li
+{
+    float: left;
 }

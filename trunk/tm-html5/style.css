@@ -66,6 +66,7 @@
 #nav
 {
     margin-top:20px;
+    background: rgb(230, 245, 255);
     background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.9) 100%);
     background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.9) 100%);
     background: -o-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.9) 100%);
