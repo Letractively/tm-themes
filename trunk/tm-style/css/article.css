@@ -106,7 +106,7 @@ article.entry .content section h2 {
 article.entry .content p,
 article.entry .content pre
 {
-    margin: 1em;
+    margin: 0 1em 1.5em;
     line-height: 1.5em;
 }
 
@@ -127,8 +127,8 @@ article.entry .content ul,
 article.entry .content ol
 {
     line-height: 1.5em;
-    margin: 0.5em 0px;
-    padding: 0px 2em;
+    margin: 0 0 1.5em;
+    padding: 0px 3em;
 }
 
 article.entry .content img
