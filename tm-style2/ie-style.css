@@ -1,0 +1,19 @@
+
+
+article, aside, dialog, figure, footer, header, hgroup, menu, nav, section {display: block;}
+
+
+#contents {
+    zoom: 1;
+    width: 1300px;
+    margin: 0px auto;
+}
+
+#main {
+    float: left;
+    width: 800px;
+}
+
+#side {
+    float: right;
+}
