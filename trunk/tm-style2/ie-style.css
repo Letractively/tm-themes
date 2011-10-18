@@ -3,17 +3,19 @@
 article, aside, dialog, figure, footer, header, hgroup, menu, nav, section {display: block;}
 
 
-#contents {
+#main {
     zoom: 1;
-    width: 1300px;
+    width: 1200px;
     margin: 0px auto;
 }
 
-#main {
+#articles {
     float: left;
     width: 800px;
+    
 }
 
 #side {
     float: right;
+    width: 300px;
 }

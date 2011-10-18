@@ -22,7 +22,7 @@ function setup_theme()
         'before_title' => '<h1>',
         'after_title' => '</h1><div class="contents">',
         'before_widget' => '<section class="side-box">',
-        'after_widget' => '<div></section>'
+        'after_widget' => '</div></section>'
     ));
     
     /**
@@ -35,7 +35,7 @@ function setup_theme()
         'before_title' => '<h1>',
         'after_title' => '</h1><div class="contents">',
         'before_widget' => '<section class="side-box">',
-        'after_widget' => '<div></section>'
+        'after_widget' => '</div></section>'
     ));
     
     /**
@@ -48,7 +48,7 @@ function setup_theme()
         'before_title' => '<h1>',
         'after_title' => '</h1><div class="contents">',
         'before_widget' => '<section class="side-box">',
-        'after_widget' => '<div></section>'
+        'after_widget' => '</div></section>'
     ));
     
     /**
