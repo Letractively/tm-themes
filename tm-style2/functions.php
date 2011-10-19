@@ -13,11 +13,17 @@ function setup_theme()
     add_theme_support('automatic-feed-links');
     
     /**
+     * nav menu
+     */
+    register_nav_menus();
+    //'top-nav'
+    
+    /**
      *  sidebar setting
      */
     register_sidebar(array(
-        'id' => 'widget00',
-        'name' => 'SideBar',
+        'id' => 'side-widget',
+        'name' => 'Side Widget',
         'description' => 'SideBar 1',
         'before_title' => '<h1>',
         'after_title' => '</h1><div class="contents">',
@@ -29,9 +35,9 @@ function setup_theme()
      *  sidebar setting
      */
     register_sidebar(array(
-        'id' => 'FooterSideBar00',
-        'name' => 'FooterSideBar00',
-        'description' => 'SideBar 1',
+        'id' => 'footer-widget00',
+        'name' => 'Footer Widget 00',
+        'description' => 'Footer Widget 00',
         'before_title' => '<h1>',
         'after_title' => '</h1><div class="contents">',
         'before_widget' => '<section class="side-box">',
@@ -42,9 +48,9 @@ function setup_theme()
      *  sidebar setting
      */
     register_sidebar(array(
-        'id' => 'FooterSideBar01',
-        'name' => 'FooterSideBar01',
-        'description' => 'SideBar 1',
+        'id' => 'footer-widget01',
+        'name' => 'Footer Widget 01',
+        'description' => 'Footer Widget 01',
         'before_title' => '<h1>',
         'after_title' => '</h1><div class="contents">',
         'before_widget' => '<section class="side-box">',
@@ -55,9 +61,9 @@ function setup_theme()
      *  sidebar setting
      */
     register_sidebar(array(
-        'id' => 'FooterSideBar02',
-        'name' => 'FooterSideBar02',
-        'description' => 'SideBar 1',
+        'id' => 'footer-widget02',
+        'name' => 'Footer Widget 02',
+        'description' => 'Footer Widget 02',
         'before_title' => '<h1>',
         'after_title' => '</h1><div class="contents">',
         'before_widget' => '<section class="side-box">',
