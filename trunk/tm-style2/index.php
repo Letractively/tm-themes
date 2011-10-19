@@ -29,6 +29,14 @@
                             <h1>
                                 <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                             </h1>
+                            
+                            <nav class="blog-info">
+                                <ul class="clearfix">
+                                    <li class="date"><?php the_time('Y.m.d'); ?></li>
+                                    <li class="cat"><?php the_category(', '); ?></li>
+                                    <li class="tag"><?php the_tags('', ', '); ?></li>
+                                </ul>
+                            </nav>
                         </header>
                         
                         <div class="content">
@@ -41,11 +49,14 @@
                         
                     </article>
                     <?php endwhile; endif; ?>
+                    
+                    <?php get_template_part('page-nav'); ?>
+                    
                 </section>
                 
                 <aside id="side">
                     <!--<h1>Side</h1>-->
-                    <?php dynamic_sidebar('widget00'); ?>
+                    <?php dynamic_sidebar('side-widget'); ?>
                 </aside>
             </div>
         </div>

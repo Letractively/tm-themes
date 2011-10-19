@@ -1,6 +1,15 @@
 
-
 article, aside, dialog, figure, footer, header, hgroup, menu, nav, section {display: block;}
+
+
+
+#nav {
+    background-color: rgba(100, 100, 100, 0.5);
+}
+#nav ul li {
+    float: left;
+}
+
 
 
 #main {
@@ -12,10 +21,35 @@ article, aside, dialog, figure, footer, header, hgroup, menu, nav, section {disp
 #articles {
     float: left;
     width: 800px;
-    
 }
 
 #side {
     float: right;
     width: 300px;
+}
+
+
+
+
+
+
+.entry .blog-info ul li {
+    float: right;
+}
+
+
+
+
+
+
+
+
+#footer-aside {
+    margin: 0px auto;
+    width: 1200px;
+}
+
+#footer-aside .side-box {
+    float: right;
+    margin: 0px auto;
 }

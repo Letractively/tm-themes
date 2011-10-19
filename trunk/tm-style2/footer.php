@@ -1,8 +1,8 @@
 <footer id="footer">
-    <aside id="footer-aside">
-        <?php dynamic_sidebar('FooterSideBar00'); ?>
-        <?php dynamic_sidebar('FooterSideBar01'); ?>
-        <?php dynamic_sidebar('FooterSideBar02'); ?>
+    <aside id="footer-aside" class="clearfix">
+        <?php dynamic_sidebar('footer-widget00'); ?>
+        <?php dynamic_sidebar('footer-widget01'); ?>
+        <?php dynamic_sidebar('footer-widget02'); ?>
     </aside>
     <address>
         Copyright &copy; 2011 phi. All Rights Reserved.
