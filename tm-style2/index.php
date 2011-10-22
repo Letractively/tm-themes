@@ -47,7 +47,11 @@
                             <?php edit_post_link('Edit', '<div class="edit"><span>', '</span></div>'); ?>
                         </footer>
                         
+                        
                     </article>
+                    
+                    <?php comments_template(); ?>
+                    
                     <?php endwhile; endif; ?>
                     
                     <?php get_template_part('page-nav'); ?>

@@ -5,9 +5,6 @@
         <?php dynamic_sidebar('footer-widget02'); ?>
     </aside>
     <address>
-        Copyright &copy; 2011 phi. All Rights Reserved.
-        <!--
         Copyright &copy; <?php bloginfo('name'); ?>. All Rights Reserved.
-        -->
     </address>
 </footer>
