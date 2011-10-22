@@ -16,8 +16,7 @@ function setup_theme()
      * nav menu
      */
     register_nav_menus();
-    //'top-nav'
-    
+        
     /**
      *  sidebar setting
      */
@@ -73,4 +72,3 @@ function setup_theme()
 }
 
 ?>
-
