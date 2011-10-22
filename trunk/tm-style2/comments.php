@@ -1,14 +1,14 @@
 <style>
     #comments, #track-back-url, #comment-form {
-        margin: 1em 0em 4em;
+        margin: 2em 0em 4em;
     }
     #comments h1, #track-back-url h1, #comment-form h3 {
         margin: 1em 0em;
-        border-bottom: 1px solid hsl(220, 80%, 50%);
+        border-bottom: 1px solid hsl(100, 40%, 50%);
         font-size: 25px;
-        color: hsl(220, 80%, 50%);
+        color: hsl(100, 40%, 50%);
         line-height: 1.25em;
-        text-shadow: 2px 2px 4px hsl(0, 0%, 67%);
+        text-shadow: 2px 2px 4px hsl(60, 50%, 50%);
     }
     
     
@@ -67,6 +67,10 @@
     #comment-form input[type="text"]{
         width: 400px;
     }
+    #comment-form label:before {
+        content: '〠';
+        padding-right: 5px;
+    }
     #comment-form textarea {
         width: 100%;
     }
@@ -74,6 +78,7 @@
         color: hsl(0, 50%, 50%);
     }
 </style>
+
 
 <?php if(have_comments()): ?>
 <section id="comments">

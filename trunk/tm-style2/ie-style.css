@@ -49,7 +49,9 @@ article, aside, dialog, figure, footer, header, hgroup, menu, nav, section {disp
     width: 1200px;
 }
 
+#footer-aside .footer-widget {
+    float: left;
+}
 #footer-aside .side-box {
-    float: right;
-    margin: 0px auto;
+    margin: 20px auto;
 }

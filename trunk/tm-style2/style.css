@@ -281,6 +281,17 @@ a:visited {
 .entry .content p, .entry .content pre, .entry .content ul, .entry .content ol {
     margin: 0 0 1.5em;
 }
+.entry .content p a {
+    -webkit-transition: 200ms;
+    -moz-transition: 200ms;
+    -o-transition: 200ms;
+    -ms-transition: 200ms;
+    transition: 200ms;
+}
+.entry .content p:hover a {
+    font-style: italic;
+    text-shadow: 0px 0px 4px hsl(230, 100%, 70%);
+}
 .entry ul, .entry ol {
     padding-left: 35px;
 }
@@ -354,7 +365,20 @@ a:visited {
 #side .side-box ul ul {
     padding-left: 20px;
 }
-
+#side .side-box li {
+    -webkit-transition: 200ms;
+    -moz-transition: 200ms;
+    -o-transition: 200ms;
+    -ms-transition: 200ms;
+    transition: 200ms;
+}
+#side .side-box:hover li {
+    text-shadow: 0px 0px 4px hsl(230, 100%, 70%);
+}
+#side .side-box:hover li:hover {
+    font-style: italic;
+    padding-left: 10px;
+}
 
 
 
@@ -403,12 +427,15 @@ a:visited {
     box-pack: center;
     width: 100%;
 }
+#footer-aside .footer-widget {
+    padding: 20px 0px;
+}
 #footer-aside .side-box {
-    padding: 20px 30px;
+    padding: 0px 20px;
     width: 400px;
 }
 #footer-aside .side-box {
-    margin: 10px 5px 40px;
+    margin: 10px 5px 20px;
 }
 #footer-aside .side-box h1 {
     border-bottom: 1px solid #ccc;
@@ -424,9 +451,22 @@ a:visited {
 #footer-aside .side-box ul ul {
     padding-left: 20px;
 }
+#footer-aside .side-box li {
+    -webkit-transition: 200ms;
+    -moz-transition: 200ms;
+    -o-transition: 200ms;
+    -ms-transition: 200ms;
+    transition: 200ms;
+}
+#footer-aside .side-box:hover li {
+    text-shadow:
+        0px 0px 4px hsl(230, 100%, 70%),
+        0px 0px 8px hsl(230, 100%, 70%);
+}
 
-
-
+#footer-aside .side-box:hover li:hover {
+    padding-left: 5px;
+}
 
 /**
  *     util
