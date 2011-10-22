@@ -12,7 +12,7 @@
 <div id="breadcrumb">
     <div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
         <a href="<?php echo home_url(); ?>" itemprop="url">
-            <span itemprop="title">Top</span>
+            <span itemprop="title"><?php bloginfo('name'); ?></span>
         </a>
         »
     </div>

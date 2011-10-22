@@ -132,6 +132,10 @@ a:visited {
     */
     
     -webkit-transition: 250ms;
+    -moz-transition: 250ms;
+    -o-transition: 250ms;
+    -ms-transition: 250ms;
+    transition: 250ms;
 }
 #nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.5);
@@ -314,6 +318,14 @@ a:visited {
 .entry table td {
     padding: 5px 10px;
     border: solid 1px hsl(0, 0%, 94%);
+}
+.entry .content .download {
+    text-align: center;
+}
+.entry .content .download:before,
+.entry .content .download:after {
+    content: " ◆ ";
+    color: rgb(200, 225, 255);
 }
 
 
