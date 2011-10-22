@@ -163,6 +163,9 @@ a:visited {
     box-shadow: 0px 4px 8px 0px black;
 }
 
+#main:hover {
+}
+
 
 
 #articles {
@@ -480,11 +483,35 @@ a:visited {
     zoom: 1;
 }
 
+.transition-1s {
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    -ms-transition: 1s;
+    transition: 1s;
+}
+.transition-500ms {
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -o-transition: 500ms;
+    -ms-transition: 500ms;
+    transition: 500ms;
+}
+.transition-250ms {
+    -webkit-transition: 250ms;
+    -moz-transition: 250ms;
+    -o-transition: 250ms;
+    -ms-transition: 250ms;
+    transition: 250ms;
+}
 
+.hide {
+    opacity: 0.0;
+}
 
-
-
-
+.show {
+    opacity: 1.0;
+}
 
 
 
