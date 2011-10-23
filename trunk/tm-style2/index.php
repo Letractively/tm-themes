@@ -12,11 +12,11 @@
                 
                 <?php get_template_part('breadcrumb'); ?>
                 
-                <section id="articles">
+                <section id="articles" class="hide">
                     <!--<h1>Home</h1>-->
                     
                     <?php if(have_posts()): while(have_posts()): the_post(); ?>
-                    <article id="entry-<?php the_id(); ?>" class="entry hide">
+                    <article id="entry-<?php the_id(); ?>" class="entry">
                         
                         <?php if (is_single()): ?>
                         <script>
