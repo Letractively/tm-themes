@@ -26,38 +26,31 @@
     // window.addEventListener("DOMContentLoaded", function()
     window.addEventListener("load", function()
     {
+        var e_articles = document.getElementById("articles");
         var entryList = document.getElementsByClassName("entry");
+        
+        // 記事リストの非表示を解除
+        e_articles.setAttribute("class", "");
         
         if (window.DOMTokenList != undefined) {
             var createFadeInFunc = function(entry) {
                 return function(){
                     entry.classList.add("transition-1s");
-                    entry.classList.remove("hide");
                     entry.classList.add("show");
                 }
             }
             for (var i=0,len=entryList.length; i<len; ++i) {
                 var entry = entryList[i];
                 entry.classList.add("hide");
-            }
-            for (var i=0,len=entryList.length; i<len; ++i) {
-                var entry = entryList[i];
                 setTimeout(createFadeInFunc(entry), i*250);
-            }
-        }
-        else {
-            for (var i=0,len=entryList.length; i<len; ++i) {
-                var entry = entryList[i];
-                entry.setAttribute("class", "entry");
             }
         }
         
         if (window.DOMTokenList != undefined) {
-            // var e_fadeOutLinkList = document.getElementsByClassName("fade-out-link");
-            var e_fadeOutLinkList = document.getElementsByTagName("a");
-            var e_articles = document.getElementById("articles");
-            for (var i=0,len=e_fadeOutLinkList.length; i<len; ++i) {
-                var link = e_fadeOutLinkList[i];
+            var links = document.links;
+            
+            for (var i=0,len=links.length; i<len; ++i) {
+                var link = links[i];
                 link.addEventListener("click", function(e){
                     // 左クリック以外は弾く
                     if (e.button != 0) { return ; }

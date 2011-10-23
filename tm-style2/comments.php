@@ -1,8 +1,8 @@
 <style>
-    #comments, #track-back-url, #comment-form {
+    #related, #comments, #track-back-url, #comment-form {
         margin: 2em 0em 4em;
     }
-    #comments h1, #track-back-url h1, #comment-form h3 {
+    #related h1, #comments h1, #track-back-url h1, #comment-form h3 {
         margin: 1em 0em;
         border-bottom: 1px solid hsl(100, 40%, 50%);
         font-size: 25px;
@@ -12,6 +12,10 @@
     }
     
     
+    
+    #related ul, #related ol {
+        padding-left: 25px;
+    }
     
     
     
@@ -79,6 +83,11 @@
     }
 </style>
 
+<?php if(function_exists('related_posts')): ?>
+<section id="related">
+    <?php related_posts(); ?>
+</section>
+<?php endif; ?>
 
 <?php if(have_comments()): ?>
 <section id="comments">
