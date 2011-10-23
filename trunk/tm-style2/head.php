@@ -16,15 +16,16 @@
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/plugins/prettify/prettify.css" />
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/plugins/prettify/prettify.js"></script>
 
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/plugins/tm/tm.audio.js"></script>
 <script type="text/javascript">
+    // 事前に読み込んでおく
+    tm.Audio.load("<?php bloginfo('template_url'); ?>/snd/link-click.ogg", "link-click");
     
     window.addEventListener("load", function(){ prettyPrint(); }, false);
     
-    var linkClickSE = new Audio("<?php bloginfo('template_url'); ?>/snd/link-click.mp3");
-    linkClickSE.volume = 0.5;
-    
-    window.addEventListener("DOMContentLoaded", function(){
-        
+    // window.addEventListener("DOMContentLoaded", function()
+    window.addEventListener("load", function()
+    {
         var entryList = document.getElementsByClassName("entry");
         
         if (window.DOMTokenList != undefined) {
@@ -77,13 +78,15 @@
                 }, false);
                 
                 link.addEventListener("mouseover", function(e){
-                    var linkHoverSE = new Audio("<?php bloginfo('template_url'); ?>/snd/link-hover.mp3");
-                    linkHoverSE.volume = 0.25;
-                    linkHoverSE.play();
+                    tm.Audio.play({
+                        "filename": "<?php bloginfo('template_url'); ?>/snd/link-hover.ogg"
+                    });
                 }, false);
                 
                 link.addEventListener("click", function(e){
-                    linkClickSE.play();
+                    tm.Audio.play({
+                        "sound": tm.Audio.get("link-click")
+                    });
                 }, false);
             }
         }
