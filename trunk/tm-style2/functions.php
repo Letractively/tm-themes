@@ -16,7 +16,7 @@ function setup_theme()
      * nav menu
      */
     register_nav_menus();
-        
+    
     /**
      *  sidebar setting
      */

@@ -20,6 +20,9 @@
     
     window.addEventListener("load", function(){ prettyPrint(); }, false);
     
+    var linkClickSE = new Audio("<?php bloginfo('template_url'); ?>/snd/link-click.mp3");
+    linkClickSE.volume = 0.5;
+    
     window.addEventListener("DOMContentLoaded", function(){
         
         var entryList = document.getElementsByClassName("entry");
@@ -72,7 +75,20 @@
                     // デフォルトイベントをキャンセル
                     e.preventDefault();
                 }, false);
+                
+                link.addEventListener("mouseover", function(e){
+                    var linkHoverSE = new Audio("<?php bloginfo('template_url'); ?>/snd/link-hover.mp3");
+                    linkHoverSE.volume = 0.25;
+                    linkHoverSE.play();
+                }, false);
+                
+                link.addEventListener("click", function(e){
+                    linkClickSE.play();
+                }, false);
             }
+        }
+        
+        if (window.Audio) {
         }
         
     }, false);
