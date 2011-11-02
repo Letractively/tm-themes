@@ -21,9 +21,20 @@
 </style>
 <div class="page-nav">
     <?php
+    $paginate_base = get_pagenum_link(1);
+    
+    if (strpos($paginate_base, '?')) {
+        $paginate_base = add_query_arg('paged', '%#%');
+        $paginate_format = '';
+    }
+    else {
+        $paginate_format = (substr($paginate_base, -1, 1) == '/' ? '' : '/').user_trailingslashit('page/%#%/', 'paged');
+        $paginate_base .= '%_%';
+    }
+    
     echo paginate_links(array(
-        'base' => get_pagenum_link(1) . '%_%',
-        'format' => 'page/%#%',
+        'base' => $paginate_base,
+        'format' => $paginate_format,
         'total' => $wp_query->max_num_pages,
         'mid_size' => 3,
         'current' => ($paged ? $paged : 1),
