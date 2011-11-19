@@ -387,6 +387,7 @@ a:visited {
     padding-left: 20px;
 }
 #side .side-box li {
+    font-size: 12px;
     -webkit-transition: 200ms;
     -moz-transition: 200ms;
     -o-transition: 200ms;

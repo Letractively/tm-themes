@@ -17,6 +17,7 @@
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/plugins/prettify/prettify.js"></script>
 
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/plugins/tm/tm.audio.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/plugins/tm/tm.mario.js"></script>
 <script type="text/javascript">
     // 事前に読み込んでおく
     tm.Audio.load("<?php bloginfo('template_url'); ?>/snd/link-click.ogg", "link-click");
@@ -86,6 +87,8 @@
         
         if (window.Audio) {
         }
+        
+        tm.Mario();
         
     }, false);
     
