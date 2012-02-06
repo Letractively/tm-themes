@@ -20,6 +20,14 @@ Tags:
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+/*
+::selection {
+    color: white;
+    background: hsl(20, 80%, 50%);
+}
+*/
+
 body {
     background-color: black;
     
@@ -201,7 +209,7 @@ a:visited {
 .entry img {
     margin: 10px auto;
     padding: 5px;
-    max-width: 500px;
+    max-width: 640px;
     border: 1px solid #aaa;
     border-radius: 5px;
     
@@ -213,6 +221,23 @@ a:visited {
 }
 .entry img:hover {
     box-shadow: 0px 0px 16px #aaf;
+}
+
+.entry iframe.video {
+    display: block;
+    margin: 10px auto;
+    padding: 5px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    -ms-transition: 1s;
+    transition: 1s;
+}
+.entry iframe.video:hover {
+    box-shadow: 0px 0px 16px #afa;
 }
 
 .entry embed {
@@ -274,24 +299,26 @@ a:visited {
 }
 .entry h1 {
     margin: 1em 0em;
-    border-bottom: 1px solid hsl(220, 80%, 50%);
+    border-bottom: 2.5px solid hsl(220, 80%, 50%);
 }
 .entry h1 a {
     font-size: 30px;
     color: hsl(220, 80%, 50%);
     text-shadow: 2px 2px 4px #aaa;
-    line-height: 1.25em;
+    line-height: 1.7em;
 }
 .entry h2 {
-    margin: 0.7em 0px;
+    margin: 1.5em 0px 1.0em;
     border-bottom: solid 1px hsl(20, 80%, 50%); 
     font-size: 24px;
     color: hsl(20, 80%, 50%);
+    line-height: 1.7em;
 }
 .entry h3 {
     margin: 0.5em 0px;
-    font-size: 16px;
+    font-size: 20px;
     color: hsl(120, 50%, 50%);
+    line-height: 1.7em;
 }
 .entry h4, .entry h5, .entry h6 {
     margin: 1.3em 0px;
@@ -399,7 +426,10 @@ a:visited {
 }
 #side .side-box:hover li:hover {
     font-style: italic;
+    /*
     padding-left: 10px;
+    */
+    zoom: 1.5;
 }
 
 
