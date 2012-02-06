@@ -469,9 +469,9 @@ a:visited {
     text-shadow: 0px 0px 4px hsl(230, 100%, 70%);
 }
 #side .side-box:hover li:hover a {
-    font-size: 20px;
     font-style: italic;
     /*
+    font-size: 20px;
     padding-left: 10px;
     zoom: 1.5;
     */
@@ -482,7 +482,23 @@ a:visited {
     text-shadow: 0px 0px 3px hsla(230, 100%, 70%, 0.5);
 }
 
-
+/**
+ *     tag cloud
+ */
+#side .side-box .tagcloud a {
+    -webkit-transition: 200ms;
+    -moz-transition: 200ms;
+    -o-transition: 200ms;
+    -ms-transition: 200ms;
+    transition: 200ms;
+}
+#side .side-box .tagcloud:hover a:not(:hover) {
+    color: transparent;
+    text-shadow: 0px 0px 3px hsla(230, 100%, 70%, 0.5);
+}
+#side .side-box .tagcloud:hover a:hover {
+    text-shadow: 0px 0px 1px hsla(230, 100%, 70%, 0.5);
+}
 
 /**
  *     footer
