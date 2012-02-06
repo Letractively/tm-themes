@@ -381,11 +381,55 @@ a:visited {
 .entry .content .download {
     text-align: center;
 }
-.entry .content .download:before,
-.entry .content .download:after {
-    content: " ◆ ";
-    color: rgb(200, 225, 255);
+
+            
+.entry .content .download, .entry .content .demo {
+    display: inline-block;
+    width: 180px;
+    height: 55px;
+    margin: 0.5em;
+    padding-top: 15px;
+    background: rgba(50, 50, 50, 1.0);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.1) 51%, rgba(255, 255, 255, 0.2) 100%), rgba(50, 50, 50, 1.0);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.1) 51%, rgba(255, 255, 255, 0.2) 100%), rgba(50, 50, 50, 1.0);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.1) 51%, rgba(255, 255, 255, 0.2) 100%), rgba(50, 50, 50, 1.0);
+    background: linear-gradient(top, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.1) 51%, rgba(255, 255, 255, 0.2) 100%), rgba(50, 50, 50, 1.0);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 1px 2px 4px 0px black;
+    
+    color: white;
+    font-size: 25px;
+    font-family: 'LeagueGothicRegular','Bebas Neue','Arial Narrow', Arial, sans-serif;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5), 0px 0px 2px rgba(255, 255, 255, 1);
+    text-decoration: none;
+    /*
+    text-transform: uppercase;
+    */
+    
+    -webkit-transition: 250ms;
+    -moz-transition: 250ms;
+    -o-transition: 250ms;
+    transition: 250ms;
+    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
+
+.entry .content .download:hover, .entry .content .demo:hover {
+    background: rgba(50, 100, 255, 1.0);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.1) 51%, rgba(255, 255, 255, 0.2) 100%), rgba(50, 100, 255, 1.0);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.1) 51%, rgba(255, 255, 255, 0.2) 100%), rgba(50, 100, 255, 1.0);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.1) 51%, rgba(255, 255, 255, 0.2) 100%), rgba(50, 100, 255, 1.0);
+    background: linear-gradient(top, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.1) 51%, rgba(255, 255, 255, 0.2) 100%), rgba(50, 100, 255, 1.0);
+}
+
+.entry .content .download:active, .entry .content .demo:active {
+    box-shadow: inset 0px 0px 4px #222;
+}
+
 
 
 /**
@@ -413,7 +457,7 @@ a:visited {
 #side .side-box ul ul {
     padding-left: 20px;
 }
-#side .side-box li {
+#side .side-box li a {
     font-size: 12px;
     -webkit-transition: 200ms;
     -moz-transition: 200ms;
@@ -421,17 +465,22 @@ a:visited {
     -ms-transition: 200ms;
     transition: 200ms;
 }
-#side .side-box:hover li {
+#side .side-box:hover li a {
     text-shadow: 0px 0px 4px hsl(230, 100%, 70%);
 }
-#side .side-box:hover li:hover {
+#side .side-box:hover li:hover a {
+    font-size: 20px;
     font-style: italic;
     /*
     padding-left: 10px;
-    */
     zoom: 1.5;
+    */
 }
-
+/* ぼかす */
+#side .side-box:hover ul li:not(:hover) a {
+    color: transparent;
+    text-shadow: 0px 0px 3px hsla(230, 100%, 70%, 0.5);
+}
 
 
 
@@ -564,7 +613,9 @@ a:visited {
 
 
 
-
+.center {
+    text-align: center;
+}
 
 
 
