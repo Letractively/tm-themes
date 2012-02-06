@@ -2,6 +2,8 @@
 <meta charset=UTF-8>
 <title><?php bloginfo('name'); ?></title>
 
+<base target="_blank">
+
 <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/favicon.ico" />
 
 <style>
@@ -53,6 +55,7 @@
             for (var i=0,len=links.length; i<len; ++i) {
                 var link = links[i];
                 link.addEventListener("click", function(e){
+                    return ;
                     // 左クリック以外は弾く
                     if (e.button != 0) { return ; }
                     // ハッシュは弾く
@@ -72,15 +75,15 @@
                 }, false);
                 
                 link.addEventListener("mouseover", function(e){
-                    tm.Audio.play({
-                        "filename": "<?php bloginfo('template_url'); ?>/snd/link-hover.ogg"
-                    });
+                    // tm.Audio.play({
+                        // "filename": "<?php bloginfo('template_url'); ?>/snd/link-hover.ogg"
+                    // });
                 }, false);
                 
                 link.addEventListener("click", function(e){
-                    tm.Audio.play({
-                        "sound": tm.Audio.get("link-click")
-                    });
+                    // tm.Audio.play({
+                        // "sound": tm.Audio.get("link-click")
+                    // });
                 }, false);
             }
         }
