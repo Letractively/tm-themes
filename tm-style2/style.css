@@ -324,7 +324,7 @@ a:visited {
     margin: 1.3em 0px;
 }
 .entry .content p, .entry .content pre, .entry .content ul, .entry .content ol {
-    margin: 0 0 1.5em;
+    margin: 1.5em 0;
 }
 .entry .content p a {
     -webkit-transition: 200ms;
@@ -343,9 +343,24 @@ a:visited {
 .entry ul, .entry ol {
     padding-left: 35px;
 }
-.entry dd {
-    margin-left: 1.5em;
+
+.entry dl {
+    
 }
+.entry dl dt {
+    margin: 1.5em 0 0.5em;
+    padding-left: 5px;
+    border-bottom: 1px dotted #aaa;
+    font-weight: bold;
+}
+.entry dl dd {
+    margin: 0.0em 1.0em;
+    padding: 8px;
+    background-color: hsla(210, 100%, 98%, 1.0);
+    border-left: 4px solid #000;
+    border-left-color: hsla(220, 100%, 70%, 1.0);
+}
+
 .entry section {
     padding: 5px 0px 10px;
 }
@@ -378,6 +393,7 @@ a:visited {
     padding: 5px 10px;
     border: solid 1px hsl(0, 0%, 94%);
 }
+
 .entry .content .download {
     text-align: center;
 }
